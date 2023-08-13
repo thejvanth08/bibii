@@ -388,6 +388,10 @@ pre {
     padding: 10px;
   }
 
+  .showcase-form {
+    width: 100%;
+  }
+
   .docs-head .grid {
     grid-template-columns: 1fr;
   }

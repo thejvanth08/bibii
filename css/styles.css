@@ -247,6 +247,11 @@ pre {
 }
 
 /* Docs */
+.docs-head img {
+  width: 280px;
+  justify-self: end;
+}
+
 .docs-main h3 {
   margin: 20px 0;
 }
@@ -264,8 +269,8 @@ pre {
 }
 
 /* Footer */
-.footer .social a {
-  margin: 0 10px;
+.footer .social i {
+  margin: 8px 10px;
 }
 
 /* Animations */
@@ -381,5 +386,9 @@ pre {
 
   .navbar ul {
     padding: 10px;
+  }
+
+  .docs-head .grid {
+    grid-template-columns: 1fr;
   }
 }

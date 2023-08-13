@@ -50,6 +50,13 @@ pre {
   padding: 10px;
 }
 
+.hidden {
+  /* occupy empty space or reserve space */
+  visibility: hidden;
+  /* to make disappear by shrinking it */
+  height: 0;
+}
+
 .navbar {
   background-color: var(--primary-color);
   color: #fff;

@@ -247,6 +247,7 @@
   background-color: var(--success-color);
   color: white;
 }
+
 .alert-error {
   background-color: var(--error-color);
   color: white;

@@ -98,6 +98,10 @@ pre {
   overflow: visible;
 }
 
+.showcase-text {
+  animation: slideInFromLeft 0.8s ease-in;
+}
+
 .showcase-form {
   position: relative;
   top: 60px;
@@ -108,6 +112,7 @@ pre {
   z-index: 100;
   /* to specifically change the position along main axis (x-axis) */
   justify-self: end;
+  animation: slideInFromRight 0.8s ease-in;
 }
 
 .showcase-form .form-control {
@@ -148,6 +153,7 @@ pre {
 /* Stats */
 .stats {
   padding-top: 120px;
+  animation: slideInFromBottom 0.8s ease-in;
 }
 
 .stats .stats-heading {
@@ -255,6 +261,49 @@ pre {
   margin: 0 10px;
 }
 
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    /* push it to left side (fully) */
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    /* push it to right (fully) */
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* Tablets and under */
 @media all and (max-width: 768px) {
   .grid,
@@ -262,7 +311,9 @@ pre {
   .stats .grid,
   .cli .grid,
   .cloud .grid,
-  .features-main .grid,
+  .features-head .grid,
+  .features-sub-head .grid,
+  .features-main div.grid,
   .docs-main .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -275,6 +326,7 @@ pre {
   .showcase-text {
     text-align: center;
     margin-top: 40px;
+    animation: slideInFromTop 0.5s ease-in;
   }
 
   .showcase-form {
@@ -282,6 +334,7 @@ pre {
     so, justify-self is for horizontal alignment */
     justify-self: center;
     margin: auto;
+    animation: slideInFromBottom 0.5s ease-in;
   }
 
   .cli .grid > *:first-child {
@@ -300,6 +353,11 @@ pre {
   .features-sub-head img,
   .docs-head img {
     justify-self: center;
+  }
+
+  .features-main .grid div:nth-child(1),
+  .features-main .grid div:nth-child(2) {
+    grid-column: 1;
   }
 }
 

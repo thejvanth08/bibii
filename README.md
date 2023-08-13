@@ -1,3 +1,3 @@
 # bibii
-Cloud Hosting Platform
-Website link: https://aquamarine-peony-7e5dff.netlify.app/docs
+###Cloud Hosting Platform
+Website link: https://thejvanth08.github.io/bibii/
